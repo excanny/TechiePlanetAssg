@@ -1,0 +1,16 @@
+QUESTION !
+
+SELECT DISTINCT salary FROM emp ORDER BY salary DESC OFFSET 1 LIMIT 1;
+
+QUESTION 2
+
+SELECT * FROM games INNER JOIN city ON games.city=city.name 
+
+QUESTION 3
+
+The LEFT JOIN keyword returns all records from the left table (games), and the matching records from the right table (city),
+ while RIGHT JOIN returns all the rows of the right table(city) and matching rows for the table on the left table(games). 
+
+QUESTION 4
+
+SELECT userId, round(AVG(duration), 0) AS AverageDuration FROM `sessions` GROUP BY userId 
